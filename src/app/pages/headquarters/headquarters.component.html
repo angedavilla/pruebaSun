@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Dane</th>
+            </tr>
+        </thead>
+        <tbody  *ngFor="let sedes of sedes.data">
+            <tr>
+                <a class="text-decoration-none text-dark" routerLink="grupos/{{sedes.dane}}" target="_blank"
+                    rel="noopener noreferrer">
+                    <td>{{ sedes.nombre }}</td>
+                </a>
+                <td>{{sedes.dane}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

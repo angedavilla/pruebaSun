@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Número de grupo</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let grupos of grupos.data">
+            <tr>
+                <td>{{grupos.id}}</td>
+                <td>{{ grupos.nombre }}</td>
+                <td>{{grupos.numGrupo}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
